@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Test knowledge in a quiz about herbs, vegetables and fruits">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" sizes="150x150" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Link to stylesheets -->
+    <link rel="stylesheet" href="assets/css/style-main.css">
+    <link rel="stylesheet" href="assets/css/style-highscores.css">
+    <!-- Name of the current page -->
+    <title>Save Score - Quiz</title>
+</head>
+
+<body>
+    <!-- Class for quiz layout - wrap -->
+    <div class="quiz-area">
+        <article class="flex-center flex-column">
+            <!-- Score that will be used in script to increase and add up -->
+            <h2 id="final-store">0</h2>
+            <!-- Form to save your score with name and navigating buttons -->
+            <form class="save-score-form">
+                <h2 id="save-score-text">Well done! Save your Score</h2>
+                <!-- Input element for the user to write a name or nickname -->
+                <input type="text" name="name" id="nickname" placeholder="Name">
+                <!-- Button to be targeted with JavaScript according to listened clicked event and save the score -->
+                <button class="btn-save-score" id="store-score-btn" type="submit" onclick="saveHighScore(event)"
+                    disabled>Save<i class="fas fa-save"></i></button>
+                <!-- Buttons to either replay or go back home -->
+                <a href="main-quiz.html" class="btn-save-score">Replay<i class="fas fa-redo"></i></a>
+                <a href="index.html" class="btn-save-score">Home<i class="fas fa-laptop-house"></i></a>
+            </form>
+        </article>
+        <!-- Footer containing link to Github and LinkedIn -->
+        <footer><a href="https://github.com/totalnoMartina" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/martina-grganic/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </footer>
+        <!-- Link to script -->
+        <script src="assets/script/save-score.js"></script>
+    </div>
+</body>
+
+</html>

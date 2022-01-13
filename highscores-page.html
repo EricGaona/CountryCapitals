@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test knowledge in a quiz about herbs, vegetables and fruits">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" sizes="150x150" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Style links -->
+    <link rel="stylesheet" href="assets/css/style-main.css">
+    <link rel="stylesheet" href="assets/css/style-quiz.css">
+    <link rel="stylesheet" href="assets/css/style-highscores.css">
+    <title>High Scores - Quiz</title>
+</head>
+
+<body>
+    <!-- Class for decorating and control of main quiz area - wrapper -->
+    <main class="quiz-area">
+        <!-- Navigation buttons, class to target style and list of high 
+            scores to be dynamically created by highscores-page.js -->
+        <nav id="high-scores" class="flex-center flex-column">
+            <!-- High scores list name -->
+            <h2 id="final-score">High Scores</h2>
+            <!-- An empty list with an id which will help Javascript to get
+                to this list and add elements <li> in it with appropriate name and score that user achieved -->
+            <ul id="high-scores-list"></ul>
+            <!-- Home Page and Reset Highscores button -->
+            <a href="index.html" class="btn">Go Home<i class="fas fa-laptop-house"></i></a>
+            <button class="btn-reset" id="reset" type="reset">Reset Highscores</button>
+        </nav>
+    </main>
+    <!-- Footer containing link to Github -->
+    <footer><a href="https://github.com/totalnoMartina"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/martina-grganic/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </footer>
+    <!-- Link to script -->
+    <script src="assets/script/high-scores.js"></script>
+</body>
+
+</html>

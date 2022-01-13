@@ -1,0 +1,153 @@
+body {
+    text-align: center;
+    color: #f9db6d;
+}
+
+#question {
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+}
+
+.option-display {
+    display: flex;
+    height: 55px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    border-radius: 40px;
+    background: #234328;
+}
+
+.option-display:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px #f9db6d;
+    transform: scale(1.02);
+    transition-duration: 100ms;
+}
+
+.option {
+    padding: 30px 30px;
+}
+
+.option-text {
+    padding: 20px;
+    width: 90%;
+}
+
+.correct {
+    background-color: #fae1df;
+    color: black;
+    box-shadow: 0 8px 16px #f9db6d;
+}
+
+.incorrect {
+    background-color: #920b16da;
+    color: #f9db6d;
+    box-shadow: 0 8px 16px #f9db6d;
+}
+
+.display-quiz {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-score {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.display-main-text {
+    font-size: 45px;
+    margin: 5px;
+    text-align: center;
+
+}
+
+#progress {
+    max-width: 360px;
+    height: 50px;
+    background: #a1f1bf;
+    border: 2px solid #3ebd6c;
+    margin: 10px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+#progress-full {
+    height: 100%;
+    background: linear-gradient(45deg, #5dee73 10%, #a4e6ae 60%, #04ac20 90%);
+    width: 0%;
+}
+
+/* Media query for mobile version up to 600px width */
+@media screen and (max-width: 600px) {
+    .option-display {
+        width: 70%;
+        height: 38px;
+    }
+
+    .display-main-text {
+        font-size: 30px;
+    }
+
+    #progress-info {
+        font-size: 18px;
+    }
+
+    #progress {
+        max-width: 200px;
+        height: 35px;
+        border: 2px solid #5aaf79;
+        margin: 10px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    #question {
+        margin: 0 10px 0 10px;
+    }
+
+    .option-text {
+        padding: 8px;
+        font-size: 17px;
+        width: 80%;
+    }
+
+    #display-quiz {
+        font-size: 19px;
+    }
+
+    #quiz {
+        font-size: 18px;
+    }
+}
+
+/* Media query for tablet size of 850px width */
+@media screen and (max-width: 850px) {
+
+    #quiz {
+        max-width: 850px;
+    }
+
+    .option-display {
+        width: 60%;
+        height: 44px;
+    }
+
+    #question {
+        font-size: 22px;
+        padding: 0 15px 0 15px;
+    }
+
+    #progress {
+        max-width: 330px;
+        height: 20px;
+        border: 2px solid #5aaf79;
+        margin: 10px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+}

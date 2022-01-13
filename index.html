@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test knowledge in a quiz about herbs, vegetables and fruits">
+    <!-- Font Awesome link for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" sizes="150x150" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Link to the style page -->
+    <link rel="stylesheet" href="assets/css/style-main.css">
+    <!-- Name of the quiz -->
+    <title>Quiz - herbs, veggies and fruits</title>
+</head>
+
+<body>
+    <!-- Main id of quiz area - wrapper -->
+    <section class="quiz-area flex-column flex-center">
+        <!-- Quiz name -->
+        <h2 class="quiz-name">A Berry Herbal Quiz</h2>
+        <!-- Introduction text -->
+        <p>Interesting facts about <i class="fas fa-lemon"></i>fruits<i class="fas fa-carrot"></i>veggies and
+            <i class="fas fa-seedling"></i>herbs</p>
+        <p>Welcome to an interactive quiz based on plant-based resources
+            <br>Have fun while learning and read carefully through the questions because
+            these facts are here to amaze and entertain you!</p>
+        <!-- Navigation links to start the quiz or view High Scores -->
+        <nav id="home-page" class="flex-column flex-center">
+            <!-- Chose number of questions -->
+            <div class="choose-number-quest">
+                <label for="questions-num">Choose number of questions between 7 - 19</label>
+                <br>
+                <input name="questions-num" id="questions-num" type="text" pattern="^[0-9]{1,2}$">
+                <br>
+                <!-- If out of range, a warning is raised -->
+                <span id="warning"></span> <!-- style this-->
+            </div>
+            <!-- Main buttons -->
+            <a class="btn" id="start-btn"><i class="fas fa-chess"></i>Start</a>
+            <a href="highscores-page.html" id="highscores-btn" class="btn"><i class="fas fa-chess-queen"></i>High
+                Scores</a>
+        </nav>
+    </section>
+    <!-- Footer containing link to Github and LinkedIn -->
+    <footer><a href="https://github.com/totalnoMartina" target="_blank"><i class="fab fa-github"></i></a>
+        <br>
+        <a href="https://www.linkedin.com/in/martina-grganic/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </footer>
+    <!-- Link to script -->
+    <script src="assets/script/index.js"></script>
+</body>
+
+</html>
